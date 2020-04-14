@@ -5,7 +5,7 @@ var list = document.querySelector("div");
 var todo = localStorage.getItem('todo')?JSON.parse(localStorage.getItem('todo')) : [];
 localStorage.setItem('todo',JSON.stringify(todo));
 var storage = JSON.parse(localStorage.getItem('todo'));
-item.addEventListener("click",function(e){
+item.addEventListener("submit",function(e){
     e.preventDefault();
     var val = document.querySelector("input");
     todo.push(val.value);
